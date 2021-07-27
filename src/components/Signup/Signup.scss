@@ -1,0 +1,89 @@
+@import "../../common/constants";
+.signup-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.signup-form {
+    position: fixed;
+    top: 10%;
+    padding: 4rem;
+    min-width: 20rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f9;
+    box-shadow: 0.1rem 0.9rem 2rem 0.6rem rgba(9, 2, 34, 0.07);
+    .signup-title {
+        margin: 0;
+    }
+    .signup-logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        img {
+            max-height: 6rem;
+        }
+        .signup-logo--text {
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: 0.05rem;
+
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+                "Helvetica Neue", sans-serif;
+        }
+    }
+    .signup-fields {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .form-control {
+            position: relative;
+            box-sizing: border-box;
+            height: auto;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 0.5rem;
+            margin: 0.25rem 0;
+            border: none;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    .signup-actions {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+
+        button {
+            padding: 0.65rem 1.4rem;
+            border-radius: 0.3rem;
+            background-color: $color-primary;
+            box-shadow: none;
+            border: 0;
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            &:hover {
+                cursor: pointer;
+                background-color: $color-primary-variant;
+            }
+        }
+        a {
+            margin: 0.5rem;
+            text-decoration: none;
+            &:hover {
+                color: $color-secondary;
+            }
+        }
+    }
+}
